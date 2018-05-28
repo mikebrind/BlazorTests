@@ -1,0 +1,99 @@
+﻿@using BlazorTests.Shared
+@page "/books"
+@inject HttpClient http
+
+<h1>Books</h1>
+
+<h1 class="display-1" onmouseover="@OnMouseOver" onmouseout="@OnMouseOut">@inOrOut</h1>
+
+@if (authors == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <select id="authors" onchange="@AuthorSelectionChanged">
+        <option></option>
+        @foreach (var author in authors)
+        {
+            <option value="@author.AuthorId">@author.Name</option>
+        }
+    </select>
+}
+
+@if(books != null)
+{
+    <ChildComponent BookList="books"></ChildComponent> 
+
+}
+
+
+
+@*@if (books != null)
+{
+    <select id="books" onchange="@BookSelectionChanged" ref="bookSelect">
+        <option></option>
+        @foreach (var book in books)
+        {
+            <option value="@book.BookId">@book.Title</option>
+        }
+    </select>
+}*@
+
+
+@if(selectedBook != null)
+{
+    <div>
+        Title: @selectedBook.Title<br />
+        Year published: @selectedBook.YearPublished<br />
+        Price: @selectedBook.Price
+    </div>
+}
+
+
+@functions {
+    string inOrOut = "OUT";
+
+    void OnMouseOver()
+    {
+        inOrOut = "IN!";
+    }
+
+    void OnMouseOut()
+    {
+        inOrOut = "OUT";
+    }
+    Author[] authors;
+    Book[] books;
+    Book selectedBook;
+    ElementRef bookSelect;
+
+
+    protected override async Task OnInitAsync()
+    {
+        authors = await http.GetJsonAsync<Author[]>("/api/book");
+    }
+
+
+    void AuthorSelectionChanged(UIChangeEventArgs e)
+    {
+        books = null;
+        if (int.TryParse(e.Value.ToString(), out int id))
+        {
+            books = authors.First(a => a.AuthorId == id).Books.ToArray();
+        }
+        bookSelect.ResetSelectedIndex();
+    }
+
+    void BookSelectionChanged(UIChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value.ToString(), out int id))
+        {
+            selectedBook = books.FirstOrDefault(b => b.BookId == id);
+        }
+        else
+        {
+            selectedBook = null;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Client.dll
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Shared.dll
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.csprojAssemblyReference.cache
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.csproj.CoreCompileInputs.cache
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.AssemblyInfoInputs.cache
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.AssemblyInfo.cs
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Client.blazor.config
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Server.deps.json
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Server.runtimeconfig.json
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Server.runtimeconfig.dev.json
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Server.dll
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Server.pdb
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Client.pdb
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\bin\Debug\netcoreapp2.0\BlazorTests.Shared.pdb
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.csproj.CopyComplete
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.dll
+C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Server\obj\Debug\netcoreapp2.0\BlazorTests.Server.pdb

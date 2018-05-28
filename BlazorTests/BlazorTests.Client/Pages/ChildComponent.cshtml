@@ -1,0 +1,17 @@
+﻿@using BlazorTests.Shared;
+
+<select id="books" bind="@SelectedBookId">
+    <option></option>
+    @foreach (var book in BookList)
+    {
+        <option value="@book.BookId">@book.Title</option>
+    }
+</select>
+
+@functions {
+    [Parameter]
+    private Book[] BookList { get; set; }
+    private int SelectedBookId;
+    //[Parameter]
+    //private RenderFragment ChildContent { get; set; }
+}

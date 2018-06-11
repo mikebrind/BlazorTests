@@ -500,7 +500,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.AzureAppServicesIntegration.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor/0.3.0": {
+      "Microsoft.AspNetCore.Blazor/0.4.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {}
@@ -509,13 +509,13 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Analyzers/0.3.0": {
+      "Microsoft.AspNetCore.Blazor.Analyzers/0.4.0": {
         "type": "package"
       },
-      "Microsoft.AspNetCore.Blazor.Browser/0.3.0": {
+      "Microsoft.AspNetCore.Blazor.Browser/0.4.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor": "0.3.0",
+          "Microsoft.AspNetCore.Blazor": "0.4.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0"
         },
         "compile": {
@@ -525,11 +525,11 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Build/0.3.0": {
+      "Microsoft.AspNetCore.Blazor.Build/0.4.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor.Analyzers": "0.3.0",
-          "Microsoft.AspNetCore.Razor.Design": "2.1.0-preview2-final"
+          "Microsoft.AspNetCore.Blazor.Analyzers": "0.4.0",
+          "Microsoft.AspNetCore.Razor.Design": "2.1.0"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1181,7 +1181,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.1.0-preview2-final": {
+      "Microsoft.AspNetCore.Razor.Design/2.1.0": {
         "type": "package",
         "build": {
           "build/netstandard2.0/_._": {}
@@ -5113,8 +5113,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BlazorTests.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Blazor.Browser": "0.3.0",
-          "Microsoft.AspNetCore.Blazor.Build": "0.3.0"
+          "Microsoft.AspNetCore.Blazor.Browser": "0.4.0",
+          "Microsoft.AspNetCore.Blazor.Build": "0.4.0"
         },
         "compile": {
           "bin/placeholder/BlazorTests.Client.dll": {}
@@ -5424,47 +5424,47 @@
         "microsoft.aspnetcore.azureappservicesintegration.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor/0.3.0": {
-      "sha512": "SeaIVahUdg4hXn8UgOEJrncr6CSDjZAdrZ13ybBt2Zdka6Gt0lh4FZx3I3xzWXURJFCXUT/g3hwXVpZdnPL9ew==",
+    "Microsoft.AspNetCore.Blazor/0.4.0": {
+      "sha512": "2kOz3sEqo1ToxtyZDrIrKPbXAZdxJfAI7O8r17mz6U4X9ErBgJh4pKjitUNlKoYJDw01lmuk3hNjI4lgHvp3Xg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor/0.3.0",
+      "path": "microsoft.aspnetcore.blazor/0.4.0",
       "files": [
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.xml",
-        "microsoft.aspnetcore.blazor.0.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.0.4.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Analyzers/0.3.0": {
-      "sha512": "1oiiQHu1/KuAxcUm6JYh9Q+QA20C1B29HZOOsYuQGC1niYJliJc9X9pqwsO7M3OxT59llapeey80OB/kGwFuTA==",
+    "Microsoft.AspNetCore.Blazor.Analyzers/0.4.0": {
+      "sha512": "WpY8WVlR7R/zppChTX5eQxYMSWLgGmw3fUrycc/WUt/lczZ3KP5Lw0DBLowrla8aJdf8CeZ7JxHIffh8ZNjisA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.analyzers/0.3.0",
+      "path": "microsoft.aspnetcore.blazor.analyzers/0.4.0",
       "files": [
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Blazor.Analyzers.dll",
-        "microsoft.aspnetcore.blazor.analyzers.0.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.analyzers.0.4.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Browser/0.3.0": {
-      "sha512": "GXE7JunOXY2UVl+/4VQ27eJwvhT3FUbP21LxPHNesqGrF5bTvLCyyn8xrPGLMGAbU+Ud2V0cBmby6+83BuXtYw==",
+    "Microsoft.AspNetCore.Blazor.Browser/0.4.0": {
+      "sha512": "RF6OPhFeQXVtWjGS+omC5JTGpi0GG5sbNIT7sEjqXMF7S2iZjByda48akBgbn+YhN0Bm6QuPwyV4dCIGhFzvLw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.browser/0.3.0",
+      "path": "microsoft.aspnetcore.blazor.browser/0.4.0",
       "files": [
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.xml",
-        "microsoft.aspnetcore.blazor.browser.0.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.browser.0.4.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.browser.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Build/0.3.0": {
-      "sha512": "zP1zhBXYJfZblXoAs8nfsblhXCSbfZv0EEmobOorTTeSXwqhkK8A45fJhADztLAJ4EXIrNabiC4gt+ND+dFhAg==",
+    "Microsoft.AspNetCore.Blazor.Build/0.4.0": {
+      "sha512": "YSW6mngv2nH2VH0fm9R12kBwqCQaiXtIme8C0ruxZVbtXOaJdrUSU5s5VfD824hr3vyu2mG/y9Vbu9NjU5Fr5g==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.build/0.3.0",
+      "path": "microsoft.aspnetcore.blazor.build/0.4.0",
       "files": [
         "build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.props",
         "build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.targets",
         "lib/netstandard1.0/_._",
-        "microsoft.aspnetcore.blazor.build.0.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.build.0.4.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.build.nuspec",
         "targets/All.props",
         "targets/All.targets",
@@ -5474,7 +5474,7 @@
         "targets/Publish.targets",
         "targets/RazorCompilation.targets",
         "targets/Standalone.Web.config",
-        "tools/Microsoft.AspNetCore.Blazor.AngleSharp.dll",
+        "tools/AngleSharp.dll",
         "tools/Microsoft.AspNetCore.Blazor.Browser.JS.dll",
         "tools/Microsoft.AspNetCore.Blazor.Browser.JS.xml",
         "tools/Microsoft.AspNetCore.Blazor.Build.deps.json",
@@ -6200,15 +6200,16 @@
         "microsoft.aspnetcore.razor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Razor.Design/2.1.0-preview2-final": {
-      "sha512": "Uad4hEElhiYieFUWNSnLcIqlJ8WtWDLL1ncm2C+lkhuTarPZRx1U4AMZPj0Tu8Pw7HygstgdRNU8v7lfF5B+qQ==",
+    "Microsoft.AspNetCore.Razor.Design/2.1.0": {
+      "sha512": "OY1Ckol/tv7r25wuQmrNaCcdByw1KNXrquHD4yLM7g1CvNB6mmlfQJbVte5m2Wxn4YhlazNAyzNz/9QVh7hgdA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.1.0-preview2-final",
+      "path": "microsoft.aspnetcore.razor.design/2.1.0",
       "files": [
+        ".signature.p7s",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
         "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.1.0-preview2-final.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.2.1.0.nupkg.sha512",
         "microsoft.aspnetcore.razor.design.nuspec",
         "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
         "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
@@ -13567,11 +13568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Server\\BlazorTests.Server.csproj",
+      "projectUniqueName": "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Server\\BlazorTests.Server.csproj",
       "projectName": "BlazorTests.Server",
-      "projectPath": "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Server\\BlazorTests.Server.csproj",
+      "projectPath": "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Server\\BlazorTests.Server.csproj",
       "packagesPath": "C:\\Users\\MIKE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Server\\obj\\",
+      "outputPath": "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\MIKE\\.dotnet\\NuGetFallbackFolder",
@@ -13592,11 +13593,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Client\\BlazorTests.Client.csproj": {
-              "projectPath": "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Client\\BlazorTests.Client.csproj"
+            "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Client\\BlazorTests.Client.csproj": {
+              "projectPath": "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Client\\BlazorTests.Client.csproj"
             },
-            "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Shared\\BlazorTests.Shared.csproj": {
-              "projectPath": "C:\\Users\\MIKE\\Documents\\Visual Studio 2017\\Projects\\BlazorTests\\BlazorTests.Shared\\BlazorTests.Shared.csproj"
+            "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Shared\\BlazorTests.Shared.csproj": {
+              "projectPath": "C:\\Users\\MIKE\\Documents\\GitHub\\BlazorTests\\BlazorTests\\BlazorTests.Shared\\BlazorTests.Shared.csproj"
             }
           }
         }

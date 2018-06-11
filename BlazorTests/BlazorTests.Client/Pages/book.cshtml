@@ -4,7 +4,7 @@
 
 <h1>Books</h1>
 
-<h1 class="display-1" onmouseover="@OnMouseOver" onmouseout="@OnMouseOut">@inOrOut</h1>
+<p>This component demonstrates fetching data from the server.</p>
 
 @if (authors == null)
 {
@@ -12,8 +12,8 @@
 }
 else
 {
-    <select id="authors" onchange="@AuthorSelectionChanged">
-        <option></option>
+    <select bind="SelectedAuthorId">
+        <option value=@(0)></option>
         @foreach (var author in authors)
         {
             <option value="@author.AuthorId">@author.Name</option>
@@ -21,79 +21,48 @@ else
     </select>
 }
 
-@if(books != null)
+@if (SelectedAuthorId != default)
 {
-    <ChildComponent BookList="books"></ChildComponent> 
+    var books = authors.Single(x => x.AuthorId == SelectedAuthorId).Books;
 
-}
-
-
-
-@*@if (books != null)
-{
-    <select id="books" onchange="@BookSelectionChanged" ref="bookSelect">
-        <option></option>
+    <select bind="SelectedBookId">
+        <option value=@(0)></option>
         @foreach (var book in books)
         {
             <option value="@book.BookId">@book.Title</option>
         }
     </select>
-}*@
 
-
-@if(selectedBook != null)
-{
-    <div>
-        Title: @selectedBook.Title<br />
-        Year published: @selectedBook.YearPublished<br />
-        Price: @selectedBook.Price
-    </div>
+    var selectedBook = books.FirstOrDefault(x => x.BookId == SelectedBookId);
+    @if (selectedBook != null)
+    {
+        <div>
+            Title: @selectedBook.Title<br />
+            Year published: @selectedBook.YearPublished<br />
+            Price: @selectedBook.Price
+        </div>
+    }
 }
 
-
 @functions {
-    string inOrOut = "OUT";
+Author[] authors;
 
-    void OnMouseOver()
+// Track the selected author ID, and when it's written to, reset SelectedBookId
+int _selectedAuthorId;
+int SelectedAuthorId
+{
+    get => _selectedAuthorId;
+    set
     {
-        inOrOut = "IN!";
+        _selectedAuthorId = value;
+        SelectedBookId = default;
     }
+}
 
-    void OnMouseOut()
-    {
-        inOrOut = "OUT";
-    }
-    Author[] authors;
-    Book[] books;
-    Book selectedBook;
-    ElementRef bookSelect;
+int SelectedBookId { get; set; }
 
-
-    protected override async Task OnInitAsync()
-    {
-        authors = await http.GetJsonAsync<Author[]>("/api/book");
-    }
-
-
-    void AuthorSelectionChanged(UIChangeEventArgs e)
-    {
-        books = null;
-        if (int.TryParse(e.Value.ToString(), out int id))
-        {
-            books = authors.First(a => a.AuthorId == id).Books.ToArray();
-        }
-        bookSelect.ResetSelectedIndex();
-    }
-
-    void BookSelectionChanged(UIChangeEventArgs e)
-    {
-        if (int.TryParse(e.Value.ToString(), out int id))
-        {
-            selectedBook = books.FirstOrDefault(b => b.BookId == id);
-        }
-        else
-        {
-            selectedBook = null;
-        }
-    }
+protected override async Task OnInitAsync()
+{
+    authors = await http.GetJsonAsync<Author[]>("/api/book");
+}
 }

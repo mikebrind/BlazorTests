@@ -1,0 +1,44 @@
+﻿@page "/drag"
+
+<h1 draggable="true" ondragstart="@Dragstart" ondragend="@Dragend">Draggables Test</h1>
+@*<div>
+    @for (var i = 0; i < 5; i++)
+    {
+        <div draggable="true" class="draggable" data-id="@i" style="left:@((110*i) + 300)px; top:100px;" ondragstart="@DragStarted">@i</div>
+    }
+</div>
+<div>Client X: @clientX<br />Client Y: @clientY</div>
+<div>
+    @if (items != null)
+    {
+        foreach (var item in items)
+        {
+    @item.Kind<br />
+        }
+    }
+    </div>*@
+
+@functions{
+
+    long clientX;
+    long clientY;
+    UIDataTransferItem[] items;
+
+    void DragStarted(UIDragEventArgs e)
+    {
+        clientX = e.ClientX;
+        clientY = e.ClientY;
+        items = e.DataTransfer.Items;
+
+    }
+    private void Dragstart(UIDragEventArgs a)
+    {
+        Console.WriteLine("Start");
+    }
+
+
+    private void Dragend(UIDragEventArgs a)
+    {
+        Console.WriteLine("end");
+    }
+}

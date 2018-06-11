@@ -1,5 +1,5 @@
-C:\Users\MIKE\.nuget\packages\microsoft.aspnetcore.blazor\0.3.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
-C:\Users\MIKE\.nuget\packages\microsoft.aspnetcore.blazor.browser\0.3.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.Browser.dll
+C:\Users\MIKE\.nuget\packages\microsoft.aspnetcore.blazor\0.4.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
+C:\Users\MIKE\.nuget\packages\microsoft.aspnetcore.blazor.browser\0.4.0\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.Browser.dll
 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\MIKE\Documents\Visual Studio 2017\Projects\BlazorTests\BlazorTests.Shared\bin\Debug\netstandard2.0\BlazorTests.Shared.dll
+C:\Users\MIKE\Documents\GitHub\BlazorTests\BlazorTests\BlazorTests.Shared\bin\Debug\netstandard2.0\BlazorTests.Shared.dll

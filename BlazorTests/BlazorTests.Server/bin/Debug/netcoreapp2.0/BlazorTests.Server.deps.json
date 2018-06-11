@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "6c3530aa0cf04876c6a1bee5b4e79f3776536cfe"
+    "signature": "6d92c7f6786102b96a6508f6479bf9db01a1428c"
   },
   "compilationOptions": {
     "defines": [
@@ -575,37 +575,37 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.AzureAppServicesIntegration.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor/0.3.0": {
+      "Microsoft.AspNetCore.Blazor/0.4.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {
-            "assemblyVersion": "0.3.0.0",
-            "fileVersion": "0.3.0.18122"
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.18158"
           }
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Analyzers/0.3.0": {},
-      "Microsoft.AspNetCore.Blazor.Browser/0.3.0": {
+      "Microsoft.AspNetCore.Blazor.Analyzers/0.4.0": {},
+      "Microsoft.AspNetCore.Blazor.Browser/0.4.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor": "0.3.0",
+          "Microsoft.AspNetCore.Blazor": "0.4.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll": {
-            "assemblyVersion": "0.3.0.0",
-            "fileVersion": "0.3.0.18122"
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.18158"
           }
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Build/0.3.0": {
+      "Microsoft.AspNetCore.Blazor.Build/0.4.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor.Analyzers": "0.3.0",
-          "Microsoft.AspNetCore.Razor.Design": "2.1.0-preview2-final"
+          "Microsoft.AspNetCore.Blazor.Analyzers": "0.4.0",
+          "Microsoft.AspNetCore.Razor.Design": "2.1.0"
         }
       },
       "Microsoft.AspNetCore.Blazor.Server/0.3.0": {
@@ -1332,7 +1332,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.1.0-preview2-final": {},
+      "Microsoft.AspNetCore.Razor.Design/2.1.0": {},
       "Microsoft.AspNetCore.Razor.Language/2.0.2": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -4704,8 +4704,8 @@
       "BlazorTests.Client/1.0.0": {
         "dependencies": {
           "BlazorTests.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Blazor.Browser": "0.3.0",
-          "Microsoft.AspNetCore.Blazor.Build": "0.3.0"
+          "Microsoft.AspNetCore.Blazor.Browser": "0.4.0",
+          "Microsoft.AspNetCore.Blazor.Build": "0.4.0"
         },
         "runtime": {
           "BlazorTests.Client.dll": {}
@@ -5067,33 +5067,33 @@
       "path": "microsoft.aspnetcore.azureappservicesintegration/2.0.0",
       "hashPath": "microsoft.aspnetcore.azureappservicesintegration.2.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Blazor/0.3.0": {
+    "Microsoft.AspNetCore.Blazor/0.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SeaIVahUdg4hXn8UgOEJrncr6CSDjZAdrZ13ybBt2Zdka6Gt0lh4FZx3I3xzWXURJFCXUT/g3hwXVpZdnPL9ew==",
-      "path": "microsoft.aspnetcore.blazor/0.3.0",
-      "hashPath": "microsoft.aspnetcore.blazor.0.3.0.nupkg.sha512"
+      "sha512": "sha512-2kOz3sEqo1ToxtyZDrIrKPbXAZdxJfAI7O8r17mz6U4X9ErBgJh4pKjitUNlKoYJDw01lmuk3hNjI4lgHvp3Xg==",
+      "path": "microsoft.aspnetcore.blazor/0.4.0",
+      "hashPath": "microsoft.aspnetcore.blazor.0.4.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Blazor.Analyzers/0.3.0": {
+    "Microsoft.AspNetCore.Blazor.Analyzers/0.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1oiiQHu1/KuAxcUm6JYh9Q+QA20C1B29HZOOsYuQGC1niYJliJc9X9pqwsO7M3OxT59llapeey80OB/kGwFuTA==",
-      "path": "microsoft.aspnetcore.blazor.analyzers/0.3.0",
-      "hashPath": "microsoft.aspnetcore.blazor.analyzers.0.3.0.nupkg.sha512"
+      "sha512": "sha512-WpY8WVlR7R/zppChTX5eQxYMSWLgGmw3fUrycc/WUt/lczZ3KP5Lw0DBLowrla8aJdf8CeZ7JxHIffh8ZNjisA==",
+      "path": "microsoft.aspnetcore.blazor.analyzers/0.4.0",
+      "hashPath": "microsoft.aspnetcore.blazor.analyzers.0.4.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Blazor.Browser/0.3.0": {
+    "Microsoft.AspNetCore.Blazor.Browser/0.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GXE7JunOXY2UVl+/4VQ27eJwvhT3FUbP21LxPHNesqGrF5bTvLCyyn8xrPGLMGAbU+Ud2V0cBmby6+83BuXtYw==",
-      "path": "microsoft.aspnetcore.blazor.browser/0.3.0",
-      "hashPath": "microsoft.aspnetcore.blazor.browser.0.3.0.nupkg.sha512"
+      "sha512": "sha512-RF6OPhFeQXVtWjGS+omC5JTGpi0GG5sbNIT7sEjqXMF7S2iZjByda48akBgbn+YhN0Bm6QuPwyV4dCIGhFzvLw==",
+      "path": "microsoft.aspnetcore.blazor.browser/0.4.0",
+      "hashPath": "microsoft.aspnetcore.blazor.browser.0.4.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Blazor.Build/0.3.0": {
+    "Microsoft.AspNetCore.Blazor.Build/0.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zP1zhBXYJfZblXoAs8nfsblhXCSbfZv0EEmobOorTTeSXwqhkK8A45fJhADztLAJ4EXIrNabiC4gt+ND+dFhAg==",
-      "path": "microsoft.aspnetcore.blazor.build/0.3.0",
-      "hashPath": "microsoft.aspnetcore.blazor.build.0.3.0.nupkg.sha512"
+      "sha512": "sha512-YSW6mngv2nH2VH0fm9R12kBwqCQaiXtIme8C0ruxZVbtXOaJdrUSU5s5VfD824hr3vyu2mG/y9Vbu9NjU5Fr5g==",
+      "path": "microsoft.aspnetcore.blazor.build/0.4.0",
+      "hashPath": "microsoft.aspnetcore.blazor.build.0.4.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Blazor.Server/0.3.0": {
       "type": "package",
@@ -5410,12 +5410,12 @@
       "path": "microsoft.aspnetcore.razor/2.0.1",
       "hashPath": "microsoft.aspnetcore.razor.2.0.1.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Razor.Design/2.1.0-preview2-final": {
+    "Microsoft.AspNetCore.Razor.Design/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Uad4hEElhiYieFUWNSnLcIqlJ8WtWDLL1ncm2C+lkhuTarPZRx1U4AMZPj0Tu8Pw7HygstgdRNU8v7lfF5B+qQ==",
-      "path": "microsoft.aspnetcore.razor.design/2.1.0-preview2-final",
-      "hashPath": "microsoft.aspnetcore.razor.design.2.1.0-preview2-final.nupkg.sha512"
+      "sha512": "sha512-OY1Ckol/tv7r25wuQmrNaCcdByw1KNXrquHD4yLM7g1CvNB6mmlfQJbVte5m2Wxn4YhlazNAyzNz/9QVh7hgdA==",
+      "path": "microsoft.aspnetcore.razor.design/2.1.0",
+      "hashPath": "microsoft.aspnetcore.razor.design.2.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/2.0.2": {
       "type": "package",
